@@ -1,0 +1,116 @@
+<%- include("../partials/header") %>
+ 
+ <!-- Content Wrapper. Contains page content -->
+ <div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1>Edit Project</h1>
+        </div>
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="index">Home</a></li>
+            <li class="breadcrumb-item active">Edit Project</li>
+          </ol>
+        </div>
+      </div>
+    </div><!-- /.container-fluid -->
+  </section>
+
+ 
+ <!-- Main content -->
+ <section class="content">
+   <form action="submitEditProjectForm" method="post">
+   <div class="row">
+    <div class="col-md-6">
+      <div class="card card-primary">
+        <div class="card-header">
+          <h3 class="card-title">General</h3>
+
+          <div class="card-tools">
+            <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+              <i class="fas fa-minus"></i>
+            </button>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <label for="inputName">Project Name</label>
+            <input type="text" id="inputName" value="Portfolio BA 2.0" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="inputDescription">Project Description</label>
+            <textarea id="inputDescription" class="form-control" rows="4"> A Node EJS web app to list new projects in my Portfolio</textarea>
+          </div>
+          <div class="form-group">
+            <label for="inputStatus">Category</label>
+            <select id="inputStatus" class="form-control custom-select">
+              <option disabled>Select one</option>
+              <option selected>Web Development</option>
+              <option>Web Design</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="inputUrl">URL</label>
+            <input type="text" id="inputUrl" value="bglad.git.com" class="form-control">
+          </div>
+          
+          <div class="form-group">
+            <label for="inputClientCompany">Client Company</label>
+            <input type="text" id="inputClientCompany" value="BGLAD NG" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="inputProjectLeader">Project Leader</label>
+            <input type="text" id="inputProjectLeader" value="Bettina A." class="form-control">
+          </div>
+        </div>
+        <!-- /.card-body -->
+      </div>
+      <!-- /.card -->
+    </div>
+    <div class="col-md-6">
+      <div class="card card-secondary">
+        <div class="card-header">
+          <h3 class="card-title">Budget</h3>
+
+          <div class="card-tools">
+            <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+              <i class="fas fa-minus"></i>
+            </button>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <label for="inputEstimatedBudget">Estimated budget</label>
+            <input type="number" id="inputEstimatedBudget" value="2.6k" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="inputSpentBudget">Total amount spent</label>
+            <input type="number" id="inputSpentBudget" value="2k" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="inputEstimatedDuration">Estimated project duration</label>
+            <input type="number" id="inputEstimatedDuration" value="4 Weeks" class="form-control">
+          </div>
+        </div>
+        <!-- /.card-body -->
+      </div>
+      <!-- /.card -->
+    </div>
+    <div class="col-md-6">
+      <div class="form-group float-right">
+        <input type="submit" value="Update Project" class="btn btn-success float-right">
+    </div>
+    <!-- /.card-body -->
+    </div>
+
+  </div>
+</form>
+</section>
+<!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+<%- include("../partials/footer") %>

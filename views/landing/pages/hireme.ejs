@@ -1,0 +1,61 @@
+
+  <header>
+    <%- include("../partials/header") %>
+  </header>
+
+
+<!-- Hero Start -->
+<div class="hero" id="home">
+  <div class="container-fluid">
+      <div class="row align-items-center">
+          <div class="col-sm-12 col-md-6">
+              <div class="hero-content">
+
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+  <!-- Hero End -->
+
+
+
+   <!-- Service Start -->
+   <div class="service" id="service">
+    <div class="container">
+        <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+          
+            <h2>Hire Me</h2>
+
+            <div class="container_hire">
+              <form action="action_page.php">
+            
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="nigeria">Nigeria</option>
+                  <option value="united kingdom">United Kingdom</option>
+                  <option value="usa">USA</option>
+                </select>
+            
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            
+                <input type="submit" value="Submit">
+            
+              </form>
+            </div>
+         </div>
+       </div>
+
+
+  <footer>
+    <%- include("../partials/footer") %>
+  </footer>
