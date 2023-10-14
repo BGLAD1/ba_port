@@ -68,7 +68,6 @@ mongoose.connect('mongodb://localhost:27017/portfolioDB', {
     });
 
 
-
 app.get('/', async(req, res) => {
     const portfolio = await collection.find({}).toArray();
     res.render('landing/pages/index.ejs', { portfolio });
@@ -103,6 +102,7 @@ app.post('/create-project', async(req, res) => {
     });
 
 });
+
 
 // Views and public folder Setup 
 app.set("view engine", "ejs");
